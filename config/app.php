@@ -2,6 +2,32 @@
 
 return [
 
+    'building' => [
+        'floors' => 4,
+        //floor height in meters (N m)
+        'floor_height' => 4,
+
+        'elevator' => [
+            //elevator speed (N m/s)
+            'speed' => 1
+        ]
+    ],
+
+    'passengers' => [
+        [
+            'floor' => 1,
+            'needed' => 4
+        ],
+        [
+            'floor' => 3,
+            'needed' => 2
+        ],
+        [
+            'floor' => 4,
+            'needed' => 1
+        ]
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Application Name
