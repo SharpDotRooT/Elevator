@@ -10,25 +10,12 @@ return [
 
         'elevator' => [
             //elevator speed (N m/s)
-            'speed' => 1
-        ]
-    ],
-
-    'passengers' => [
-        [
-            'floor' => 1,
-            'needed_floor' => 4,
-            'go' => \App\Elevator\Passengers::WHERE_TO_GO[0]
-        ],
-        [
-            'floor' => 3,
-            'needed' => 2,
-            'go' => \App\Elevator\Passengers::WHERE_TO_GO[1]
-        ],
-        [
-            'floor' => 4,
-            'needed' => 1,
-            'go' => \App\Elevator\Passengers::WHERE_TO_GO[1]
+            'speed' => 1,
+            //time from elevator open doors (s)
+            'open' => 1,
+            //time from elevator closed doors (s)
+            'close' => 1,
+            'simulate' => false
         ]
     ],
 

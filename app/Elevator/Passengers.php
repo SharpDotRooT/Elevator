@@ -17,14 +17,9 @@ namespace App\Elevator;
 class Passengers {
 
     /**
-     *
+     * @var string $move
      */
-    const WHERE_TO_GO = ['up', 'down'];
-
-    /**
-     * @var string $go
-     */
-    private $go;
+    private $move;
 
     /**
      * @var int $floor
@@ -40,20 +35,20 @@ class Passengers {
      * Passengers constructor.
      *
      * @param int    $floor
-     * @param string $go
+     * @param string $move
      * @param int    $needed_floor
      */
-    public function __construct(int $floor, string $go, int $needed_floor) {
+    public function __construct(int $floor, string $move, int $needed_floor) {
         $this->floor = $floor;
-        $this->go = $go;
+        $this->move = $move;
         $this->needed_floor = $needed_floor;
     }
 
     /**
      * @return string
      */
-    public function getGo(): string {
-        return $this->go;
+    public function getMove(): string {
+        return $this->move;
     }
 
     /**

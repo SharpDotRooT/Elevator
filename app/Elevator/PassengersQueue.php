@@ -27,7 +27,7 @@ class PassengersQueue implements Queue {
      * @return \App\Elevator\Passengers|null
      */
     public function pop(): ?Passengers {
-        return array_pop($this->queue);
+        return array_shift($this->queue);
     }
 
     /**
